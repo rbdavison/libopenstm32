@@ -47,7 +47,7 @@ examples: lib
 	@printf "  BUILD   examples/lpc13xx\n"
 	$(Q)$(MAKE) -C examples/lpc13xx all
 
-install: build
+install: lib
 	@printf "  INSTALL headers\n"
 	$(Q)$(INSTALL) -d $(INCDIR)/libopencm3
 	$(Q)$(INSTALL) -d $(LIBDIR)
